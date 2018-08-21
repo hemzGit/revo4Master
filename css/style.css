@@ -933,6 +933,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-work .section-heading h2 {
   color: #454655;
+  font-size: 34px;
+  font-weight: bold;
 }
 /* #fh5co-work .section-heading h2:after {
   background: #454655;
@@ -978,9 +980,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-work .fh5co-project-item .fh5co-text h2 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0;
   padding-bottom: 1.5em;
+  color: #454655;
 }
 #fh5co-work .fh5co-project-item .fh5co-text span {
   color: #b3b3b3;
@@ -1103,7 +1106,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section-heading h2 {
   margin: 0 0 30px 0;
-  font-size: 50px;
+  font-size: 34px;
   font-weight: 300;
   color: #fff;
   /* text-transform: uppercase; */
@@ -1135,11 +1138,11 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   border-radius: 3px;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .section-heading h2 {
     font-size: 30px;
   }
-}
+} */
 .section-heading h3 {
   font-weight: 300;
   line-height: 1.5;
@@ -1165,7 +1168,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
-  background: #52d3aa;
+  background: #454655;
 }
 .fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
   outline: none;
@@ -1179,7 +1182,7 @@ h1, h2, h3, h4, h5, h6 {
   *display: inline;
   width: 25px;
   height: 3px;
-  color: #52d3aa;
+  color: #454655;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
@@ -1457,20 +1460,22 @@ h1, h2, h3, h4, h5, h6 {
 
 /*# sourceMappingURL=style.css.map */
 
-/*Hemalatha Gopalakrishnan*/
+/********Hemalatha Gopalakrishnan*/
 .hero-img{
   margin-top: 3em;
   background-image: url("../images/hero/ill@3x.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 950px 320px;
+  background-size: contain;
   background-position: 40% 55%;
 }
 .fh5co-service img {
   width: 120px;
   height: 120px;
-  margin-left: 5em;
-  margin-bottom: 1.5em;
+  /* margin-left: 5em;
+  margin-bottom: 1.5em; */
+  display: block;
+    margin: 0 auto;
 }
 
 .fh5co-service p {
@@ -1542,14 +1547,14 @@ div.contact-us .checkbox .checkbox-inline span{
   }
   .hero-img{
     /* display: none; */
-    background-size: contain;
-    background-position: 40% 40%;
+    /* background-size: contain; */
+    background-position: 40% 50%;
   }
   #fh5co-home .text-inner h1{
-    font-size: 21px;
+    font-size: 24px;
   }
   #fh5co-home .text-inner h2 {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
   }
   #fh5co-home, #fh5co-home .text-wrap{
@@ -1559,7 +1564,7 @@ div.contact-us .checkbox .checkbox-inline span{
   #fh5co-header .navbar-brand {
     width: 100%;
   }
-  .fh5co-item{
+  /* .fh5co-item{
     margin-bottom: 3em;
-  }
+  } */
 }
