@@ -367,7 +367,8 @@
 					<div class="col-md-12 to-animate">
 						<div class="row">
 							<div class="form-group col-md-6">
-								<input id="name" class="form-control" placeholder="NAME (Required)" type="text" required>
+								<input id="name" class="form-control" placeholder="NAME (Required)" type="text" data-error="Bruh, name is required" required>
+								<div class="help-block with-errors"></div>
 							</div>
 							<div class="form-group col-md-6">
 								<input id="phone" class="form-control" placeholder="COMPANY" type="text">
@@ -376,10 +377,12 @@
 
 						<div class="row">
 							<div class="form-group col-md-6">
-								<input id="email" class="form-control" placeholder="EMAIL (Required)" type="email" required>
+								<input id="email" class="form-control" placeholder="EMAIL (Required)" type="email" data-error="Bruh, that email address is invalid" required >
+								<div class="help-block with-errors"></div>
 							</div>
 							<div class="form-group col-md-6">
-								<input id="phone" class="form-control" placeholder="PHONE (Required)" type="tel" required>
+								<input id="phone" class="form-control" placeholder="PHONE (Required)" type="tel" data-error="Bruh, Phone number is required" required>
+								<div class="help-block with-errors"></div>
 							</div>
 						</div>
 
@@ -396,12 +399,25 @@
 							</div>
 						</div>
 						<div class="form-group col-md-12 mrg-top1em">
-							<input class="btn btn-primary btn-lg" value="Submit" type="submit">
-							<p>Call us for immediate support this number+880 876 65 455</p>
-							<p>© 2017-2018 - All rights reserved.</p>
+							<input class="btn btn-primary btn-lg" value="Submit" type="submit" id="revo-submit">
+							<p>Call us for immediate support this +000 000 0000</p>
+							<p>© 2018 - All rights reserved.</p>
 						</div>
 					</div>
 				</form>
+			</div>
+		</div>
+
+		<div class="modal fade" id="registration">
+			<div class="modal-dialog modal-lg">
+				<!-- <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+					</button>
+				</div>	 -->
+				<div class="modal-content">
+					<div class="modal-body">Thanks for reaching us, we will reach you shortly.</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -436,15 +452,24 @@
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-
-
-
+	<script src="js/validator.min.js"></script>
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+	<script>
+	$('#revo-form').validator().on('submit', function (e) {
+		if (e.isDefaultPrevented()) {
 
-
+		} else {
+			e.preventDefault();
+			$('#registration').modal('show');	
+			setTimeout(function() {
+				$('#registration').modal('hide');
+				//e.preventDefault();
+				location.reload();	
+			}, 2000);			
+		}
+	})
+	</script>
 </body>
-
 </html>
