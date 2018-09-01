@@ -232,6 +232,7 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
     background: none;
     color: #2f3f92 !important;
+    font-weight: 700;
   }
   #fh5co-header #navbar li.active a span:before {
     visibility: visible;
@@ -256,6 +257,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: block;
   padding-bottom: 2px;
+  line-height: 24px;
 }
 #fh5co-header #navbar li a span:before {
   content: "";
@@ -986,7 +988,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-work .fh5co-project-item .fh5co-text h2 {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
   padding-bottom: 1.5em;
   color: #454655;
@@ -994,7 +996,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-work .fh5co-project-item .fh5co-text span {
   color: #b3b3b3;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.65;
 }
@@ -1549,11 +1551,12 @@ div.contact-us .checkbox .checkbox-inline span{
   margin-bottom: 3em;
  }
  .modal-title{
-    font-size: 22px;
+  font-size: 24px;
+  font-weight: 700;
  }
 .modal-body{
-    padding: 1em;
-    font-size: 15px;
+    padding: 2em;
+    font-size: 16px;
 }
 .modal-header .close{
     margin-top: -40px;
