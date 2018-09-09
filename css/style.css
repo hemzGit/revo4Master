@@ -1472,7 +1472,7 @@ h1, h2, h3, h4, h5, h6 {
 /********Hemalatha Gopalakrishnan*/
 .hero-img{
   margin-top: 3em;
-  background-image: url("../images/hero/ill@3x.png");
+  background-image: url("../images/hero/ill.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1553,6 +1553,7 @@ div.contact-us .checkbox .checkbox-inline span{
  .modal-title{
   font-size: 24px;
   font-weight: 700;
+  text-align: center;
  }
 .modal-body{
     padding: 2em;
@@ -1588,7 +1589,13 @@ div.contact-us .checkbox .checkbox-inline span{
   font-weight: 800;
   letter-spacing: 2px;
 }
-
+.tr-logo{
+  background-image: url("../images/services/tr-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-position: 0% 55%;
+}
  @media screen and (max-width: 768px) {
   div.contact-us .checkbox .checkbox-inline{
     margin-bottom: 2em;
