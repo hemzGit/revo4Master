@@ -1676,8 +1676,9 @@ div.contact-us .checkbox .checkbox-inline span {
   background-image: url("../images/services/tr-logo.png");
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: contain; */
+  background-size: contain;
   height: 140px;
+  margin-bottom: 2em;
 }
 @media screen and (max-width: 768px) {
   div.contact-us .checkbox .checkbox-inline {
@@ -1686,7 +1687,7 @@ div.contact-us .checkbox .checkbox-inline span {
   .hero-img {
     /* display: none; */
     /* background-size: contain; */
-    background-position: 40% 50%;
+    background-position: 40% 55%;
   }
   #fh5co-home .text-inner h1 {
     font-size: 24px;
@@ -1706,8 +1707,18 @@ div.contact-us .checkbox .checkbox-inline span {
   /* .fh5co-item{
     margin-bottom: 3em;
   } */
-  .tr-logo {
-    background-size: 80%;
-    margin-bottom: 1em;
+  /* .tr-logo {
+    background-size: contain;
+    margin-bottom: 2em;
+  } */
+  .modal-header .close {
+    position: absolute;
+    top: 0.1em;
+    right: 0.2em;
+    margin-top: 0px;
+  }
+  .modal-title {
+    font-size: 20px;
+    padding-right: 2em;
   }
 }
